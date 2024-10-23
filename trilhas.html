@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilhas em Nova Iguaçu</title>
+    <link rel="stylesheet" href="trilhas.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar trilhas...">
+        </div>
+    </header>
+    <div class="container">
+        <aside class="trails-list">
+            <h2>Trilhas selecionadas</h2>
+            <div class="trail">
+                <img src="img/rampa.png" alt="Serra do Vulcão">
+                <div class="trail-info">
+                    <h3>Serra do Vulcão e Mirante</h3>
+                    <p>Parque Estadual do Mendanha</p>
+                    <p><strong>4.4 ★</strong> - Difícil - 11.4 km - Est. 5h 5min</p>
+                </div>
+            </div>
+            <div class="trail">
+                <img src="trail2.jpg" alt="Pedra da Contenda">
+                <div class="trail-info">
+                    <h3>Pedra da Contenda</h3>
+                    <p>Área de Proteção do Gericinó</p>
+                    <p><strong>5.0 ★</strong> - Difícil - 6.9 km - Est. 2h 32min</p>
+                </div>
+            </div>
+
+            <div class="trail">
+                <img src="trail2.jpg" alt="Poção via Trilha da Ligação">
+                <div class="trail-info">
+                    <h3>Poção via Trilha da Ligação</h3>
+                    <p>Área de Proteção do Gericinó</p>
+                    <p><strong>★ 5.0</strong> - Difícil - 6.9 km - Est. 2h 32min</p>
+                </div>
+            </div>
+
+            <div class="trail">
+                <img src="trail2.jpg" alt="Pedra da Contenda">
+                <div class="trail-info">
+                    <h3>Pedra da Contenda</h3>
+                    <p>Área de Proteção do Gericinó</p>
+                    <p><strong>5.0 ★</strong> - Difícil - 6.9 km - Est. 2h 32min</p>
+                </div>
+            </div>
+
+            <!-- Mais trilhas podem ser adicionadas aqui -->
+        </aside>
+        <main id="map"></main>
+    </div>
+    <script>
+        function initMap() {
+            var center = {lat: -22.759, lng: -43.451};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 11,
+                center: center
+            });
+
+            var trails = [
+                {lat: -22.760, lng: -43.457, name: "Serra do Vulcão e Mirante"},
+                {lat: -22.766, lng: -43.456, name: "Pedra da Contenda"},
+                // Adicione outras coordenadas de trilhas aqui
+            ];
+
+            trails.forEach(function(trail) {
+                new google.maps.Marker({
+                    position: {lat: trail.lat, lng: trail.lng},
+                    map: map,
+                    title: trail.name
+                });
+            });
+        }
+    </script>
+</body>
+</html>

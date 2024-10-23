@@ -5,75 +5,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SobreTrilhas</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-
-
-    
-    <header>
-        <nav class="nav1">
-            <a class="logo" href=";">ForTrails</a>
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#" alt="Logo"><img src="img/logo_trail.png" alt="ForTrails" id="logo-trails" style="max-width: 100px; max-width: 50px;"> Fortrails</a><!-- Substitua pelo caminho da sua logo -->
                 
             </div>
-            <ul class="nav-list">
-                <li><a href=";">Home</a></li>
-                <li><a href=";">Sobre Nós</a></li>
-                <li><a href=";">Redes Sociais</a></li>
-                <li><a href=";">Explorar</a></li>
-
-                
-
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Trilhas</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
             </ul>
-           
-
-           
-            
-
-                
-                <form class="searchbar">
-
-                    <input type="text" id="search-bar" placeholder="Procure por trilhas">
-                    
-
-
-
-                </form>
-
-            
-            
-            
-                
-
-
-
-           
-
-
-           
-            
-
-
+           <a href="login.html"> <button class="navbar-button">Login</button> </a><!-- Botão adicionado -->
         </nav>
-
-
-        <nav class="text-search"><h1>Desbloqueie seu lado aventureiro</h1></nav>
-
-
-
+        <div class="header-content">
+            <h1>Descubra sua nova Aventura!</h1>
+            <li><a class="" href="#">Busque por Trilhas</a></li>
+            <form class="search-form">
+                <input type="text" placeholder="Pesquisar por cidades, parque ou nome da trilha..." />
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
     </header>
-    <main></main>
+    <main>
+        
+    </main>
 
-    
-                
-        <h1>Trilhas mais acessadas</h1>
+    <h2>Locais favoritos perto de</h2>
 
+<div class="trails-container">
 
-    
+    <!-- Primeira trilha -->
+    <div class="trail-card-container">
+        <div class="trail-card">
+            <div class="trail-image">
+                <img src="img/pedrabranca.png" alt="Pico da Pedra Branca">
+            </div>
+            
+            <div class="trail-info">
+                <div class="trail-title">Pico da Pedra Branca</div>
+                <div class="trail-location">Parque Estadual da Pedra Branca</div>
+                <div class="trail-details">
+                    <span class="rating">★ 4.6</span>
+                    <span class="distance">13.5 km</span>
+                    <span class="difficulty">Difícil</span>
+                </div>
+                <div class="estimate">Est. 5h 52min</div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Segunda trilha -->
+    <div class="trail-card-container">
+        <div class="trail-card">
+            <div class="trail-image">
+                <img src="img/rampa.png" alt="Serra do Vulcão">
+            </div>
+          
+            
+            <div class="trail-info">
+                <div class="trail-title">Serra do Vulcão e Mirante da Rampa</div>
+                <div class="trail-location">Parque Estadual do Mendanha</div>
+                <div class="trail-details">
+                    <span class="rating">★ 4.4</span>
+                    <span class="distance">11.4 km</span>
+                    <span class="difficulty">Difícil</span>
+                </div>
+                <div class="estimate">Est. 5h 5min</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terceira trilha -->
+    <div class="trail-card-container">
+        <div class="trail-card">
+            <div class="trail-image">
+                <img src="img/pocao.png" alt="Poção via Trilha da Ligação">
+            </div>
+          
+            <div class="trail-info">
+                <div class="trail-title">Poção via Trilha da Ligação</div>
+                <div class="trail-location">Proteção Ambiental de Gericinó</div>
+                <div class="trail-details">
+                    <span class="rating">★ 5.0</span>
+                    <span class="distance">Est. 2h 32min</span>
+                    <span class="difficulty">Dificil</span>
+                </div>
+                <div class="estimate">Est. 1h 38min</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quarta trilha -->
+    <div class="trail-card-container">
+        <div class="trail-card">
+            <div class="trail-image">
+                <img src="img/freguesia.png" alt="Bosque da Freguesia">
+            </div>
+           
+            
+            <div class="trail-info">
+                <div class="trail-title">Bosque da Freguesia</div>
+                <div class="trail-location">Rio de Janeiro, Brasil</div>
+                <div class="trail-details">
+                    <span class="rating">★ 5.0</span>
+                    <span class="distance">1.9 km</span>
+                    <span class="difficulty">Fácil</span>
+                </div>
+                <div class="estimate">Est. 25min</div>
+            </div>
+        </div>
+    </div>
+
+</div>
 
 </body>
+
+<script>
+
+var myCarousel = document.querySelector('#myCarousel')
+var carousel = new bootstrap.Carousel(myCarousel)
+
+</script>
+
 </html>
+
+<footer>
+
+
+
+
+
+</footer>

@@ -1,13 +1,276 @@
-*       {
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-margin: 0;
-padding: 0;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
+.header {
+    background-image: url('/img/trilha.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    height: 80vh; /* Altura do header */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Camada escura para melhorar a legibilidade do texto */
+    z-index: 1;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2; /* Para garantir que o texto fique acima da camada escura */
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+/* Navbar */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0); /* Transparente */
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    z-index: 3; /* Acima do header */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400px;
+    font-size: 20px;
+}
+
+.logo a {
+    height: 50px; /* Ajuste a altura conforme necessário */
+    margin-right: 20px; /* Espaço entre a logo e os links */
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content:space-evenly;
+    flex-grow: 1; /* Para ocupar o espaço restante */
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white; /* Cor do texto */
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.navbar a:hover {
+    color: #FFD700; /* Cor ao passar o mouse */
+    transition: 0.3s;
+}
+
+/* Botão na Navbar */
+.navbar-button {
+    padding: 10px 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffd90000; /* Cor do botão */
+    border:  1px #FFD700 solid;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-left: 20px; /* Espaço entre os links e o botão */
+}
+
+.navbar-button:hover {
+    background-color: #FFD700;
+    transition: 0.3s;
+    color: #000000;
+}
+
+/* Formulário de Pesquisa */
+
+.search-form {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-form input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 16px;
+    flex-grow: 1;
+    width: 500px;
+    color: #555;
+}
+
+.search-form input[type="text"]::placeholder {
+    color: #888;
+}
+
+.search-form button {
+    background-color: #ffd900;
+    color: #000000;border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.search-form button:hover {
+    background-color: #debd00;
+    transition:  0.3s;
 }
 
 
+
+
+/* trilhas mais acessadas */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+
+h2 {
+    text-align: left;
+    margin-left: 30px;
+    color: #333;
+    font-size: 24px;
+    padding-top: 20px;
+}
+
+.trails-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.trail-card {
+    background-color: #fff;
+    border-radius: 12px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    padding: 0;
+    transition: transform 0.3s ease;
+}
+
+.trail-card:hover {
+    transform: scale(1.05);
+}
+
+.trail-image img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.trail-info {
+    padding: 15px;
+}
+
+.trail-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #333;
+}
+
+.trail-location {
+    color: #555;
+    font-size: 14px;
+}
+
+.trail-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.rating, .distance, .difficulty, .estimate {
+    color: #888;
+    font-size: 10px;
+}
+
+.bookmark-icon {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.bookmark-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.trail-card-container {
+    position: relative;
+}
+
+
+
+
+
+
+
+    /*@media screen (min-width 768px) {
+
+    /*}
+
+   .container-fluid {
+    height: 100%;
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(6, 247, 30, 0.303);
+
+    }
+
+
 a {
-color:white;    
+color:rgb(4, 0, 255);    
 
 text-decoration: none;
 transition: 0.3s;
@@ -32,32 +295,13 @@ opacity: 0.5;
 
 }
 
-.nav1     {
 
-display: flex;
-justify-content: space-around;
-align-items: top;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-background: url('img/trilha.jpg') no-repeat center center;
-background-size: cover;
-background-position: cover;
-height: 92vh;
-margin: 0;
-padding: 20;
-
-
-}
-
-body    {
-
-background-color: blanchedalmond;
-
-}
 
 .nav-list       {
 
 list-style: none;
 display: flex;
+
 
 
 }
@@ -93,27 +337,11 @@ margin: 8px;
 display: none;
 cursor: pointer;
 
-}
+}/*/
 
-@media (max-width: 999px)
 
-{
+  @media screen and (max-width: 1020px)  {
+    
+  }
 
-.nav-list {
 
-position: absolute;
-top: 8vh;
-right: 0;
-width: 50vw;
-background: red;
-flex-direction: column;
-align-items: center;
-justify-content: space-around;
-
-}
-.nav-list{
-
-margin-left: 0px;
-
-}
-}

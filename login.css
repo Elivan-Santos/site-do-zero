@@ -1,0 +1,198 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+body {
+
+    
+    background-image: url(img/trilha.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    
+}
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.login-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffd90000; /* Cor do botão */
+    border:  1px #FFD700 solid;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin-left: 20px; /* Espaço entre os links e o botão */
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #FFD700;
+}
+
+.login-options {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-options a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.login-options a:hover {
+    text-decoration: underline;
+}
+
+.login-options p {
+    margin-top: 10px;
+}
+
+/* style do header */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+   
+    
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-container {
+    flex: 5;
+    text-align: center;
+    
+}
+
+.search-container input {
+    width: 50%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 16px;
+    flex-grow: 1;
+    width: 500px;
+    color: #555;
+}
+
+.login-button {
+    padding: 10px 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffd90000; /* Cor do botão */
+    border:  1px #FFD700 solid;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-left: 20px; /* Espaço entre os 1nks e o botão */
+}
+
+.login-button:hover {
+    background-color: #FFD700;
+}
+
+@media (max-width: 768px) {
+    .search-container input {
+        width: 80%;
+    }
+}
+
+#menu {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    text-decoration: none;
+    
+   
+}
+
+a {
+
+text-decoration: none;
+color: rgb(255, 255, 255);
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+transition: 0.3s;
+font-weight: 20px;
+
+}
+
+a:hover {
+
+color: #FFD700;
+
+}
+
+
+footer {
+
+background-color: #d4cb50;
+width: 100%;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+letter-spacing: 1px;
+display: flex; 
+align-items: center; 
+justify-content: center; 
+height: 20vh;
+}
+.logo-trails {
+height: 100px;
+
+    
+}
