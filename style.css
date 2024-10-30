@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-
+*{
+    padding: 0; 
+    margin: 0;
+}
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -16,6 +19,8 @@ body {
     color: white;
     text-align: center;
     position: relative;
+    padding: 0 10%;
+   
 }
 
 .header::before {
@@ -35,7 +40,7 @@ body {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 1.5em;
     margin: 0;
 }
 
@@ -50,7 +55,7 @@ p {
     left: 0;
     right: 0;
     background: rgba(255, 255, 255, 0); /* Transparente */
-    padding: 20px 20px;
+    padding: 0px 0px;
     display: flex;
     align-items: center;
     z-index: 3; /* Acima do header */
@@ -64,12 +69,26 @@ p {
     margin-right: 20px; /* Espaço entre a logo e os links */
 }
 
+.logo {
+        padding: 0px 0px;
+        display: inline;
+    
+}
+
+.btm_icon_header {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
 .navbar ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-;
     flex-grow: 1; /* Para ocupar o espaço restante */
 }
 
@@ -248,100 +267,18 @@ h2 {
     position: relative;
 }
 
+.trail_style {
+
+border: none;
+text-decoration: none;
 
 
+}
 
-
-
-
-    /*@media screen (min-width 768px) {
-
-    /*}
-
-   .container-fluid {
-    height: 100%;
-    width: 100%;
-    display: block;
-    padding: 0;
-    margin: 0;
-    background-color: rgba(6, 247, 30, 0.303);
-
+@media (max-width: 768px) {
+    .search-container input {
+        width: 80%;
     }
 
-
-a {
-color:rgb(4, 0, 255);    
-
-text-decoration: none;
-transition: 0.3s;
-
-}
-
-a:hover       {
-
-opacity: 0.5;
-
-
-
-}
-
-
-.logo       {
-
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-
-
-}
-
-
-
-.nav-list       {
-
-list-style: none;
-display: flex;
-
-
-
-}
-
-.nav-list  li        {
-
-letter-spacing: 3px;
-margin-left: 32px;
-
-
-}
-
-div {
-
-position: absolute;
-bottom: 0px;
-
-
-}
-
-.mobile menu        {
-
-width: 32px;
-height: 2px;
-background: #fff;
-margin: 8px;
-
-
-}
-
-.mobile-menu nav {
-
-display: none;
-cursor: pointer;
-
-}/*/
-
-
-  @media screen and (max-width: 1020px)  {
-    
-  }
-
+ }
 

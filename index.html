@@ -9,25 +9,39 @@
 </head>
 <body>
     <header class="header">
+        
         <nav class="navbar">
+            <button  class="btm_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+            </button>
             <div class="logo">
-                <a href="#" alt="Logo"><img src="img/logo_trail.png" alt="ForTrails" id="logo-trails" style="max-width: 100px; max-width: 50px;"> Fortrails</a><!-- Substitua pelo caminho da sua logo -->
+                
+                <img src="img/logo_trail.png" alt="ForTrails" id="logo" style="max-width: 100px; max-width: 70px;">
                 
             </div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Trilhas</a></li>
+                <li><a href="#">ForTrails</a></li>
+            </ul>
+            <div class="navegation_header">
+                <button class="btm_icon_header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                      </svg>
+                </button>
+            <li><a href="trilhas.html">Trilhas</a></li>
                 <li><a href="#">Contato</a></li>
                 <li><a href="sobrenos.html">Sobre Nós</a></li>
-            </ul>
+            </div>
            <a href="login.html"> <button class="navbar-button">Login</button> </a><!-- Botão adicionado -->
         </nav>
         <div class="header-content">
             <h1>Descubra sua nova Aventura!</h1>
-            <li><a class="" href="#">Busque por Trilhas</a></li>
+            <a>Busque por Trilhas</a>
             <form class="search-form">
                 <input type="text" placeholder="Pesquisar por cidades, parque ou nome da trilha..." />
-                <button type="submit">Pesquisar</button>
+                <button class="search-container" type="submit">Pesquisar</button>
             </form>
         </div>
     </header>
@@ -40,27 +54,29 @@
 <div class="trails-container">
 
     <!-- Primeira trilha -->
+    <a class="trail_style" href="#">
     <div class="trail-card-container">
-        <div class="trail-card">
+
+         <div class="trail-card">
             <div class="trail-image">
                 <img src="img/pedrabranca.png" alt="Pico da Pedra Branca">
             </div>
             
-            <div class="trail-info">
-                <div class="trail-title">Pico da Pedra Branca</div>
+            <div  class="trail-info">
+               <div class="trail-title">Pico da Pedra Branca</div>
                 <div class="trail-location">Parque Estadual da Pedra Branca</div>
                 <div class="trail-details">
                     <span class="rating">★ 4.6</span>
                     <span class="distance">13.5 km</span>
                     <span class="difficulty">Difícil</span>
                 </div>
-                <div class="estimate">Est. 5h 52min</div>
+                <div class="estimate">Est. 5h 52min</div></a>
             </div>
         </div>
     </div>
 
     <!-- Segunda trilha -->
-    <div class="trail-card-container">
+    <a class="trail_style" href="#"><div class="trail-card-container">
         <div class="trail-card">
             <div class="trail-image">
                 <img src="img/rampa.png" alt="Serra do Vulcão">
@@ -79,8 +95,10 @@
             </div>
         </div>
     </div>
-
+</a>
     <!-- Terceira trilha -->
+    <a class="trail_style" href="#">
+
     <div class="trail-card-container">
         <div class="trail-card">
             <div class="trail-image">
@@ -99,8 +117,9 @@
             </div>
         </div>
     </div>
-
+    </a>
     <!-- Quarta trilha -->
+    <a class="trail_style" href="#">
     <div class="trail-card-container">
         <div class="trail-card">
             <div class="trail-image">
@@ -120,24 +139,12 @@
             </div>
         </div>
     </div>
-
+    </a>
 </div>
 
 </body>
 
-<script>
 
-var myCarousel = document.querySelector('#myCarousel')
-var carousel = new bootstrap.Carousel(myCarousel)
-
-</script>
 
 </html>
 
-<footer>
-
-
-
-
-
-</footer>

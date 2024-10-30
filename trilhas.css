@@ -2,28 +2,70 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    height: 100%;
+    height: 100vh;
 }
 
 
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: #4CAF50;
-    padding: 10px 20px;
-    color: white;
+    justify-content: space-between;
+    padding: 10px 20px 0;
+    background-color:#f8f3f3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: auto;
+}
+.header_content, .header_navegation, li, ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 5px;
+    border: 0;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+
 }
 
-.logo img {
-    height: 40px;
-}
-
-.search-bar input {
-    padding: 8px;
-    width: 200px;
+.login-button {
+    padding: 10px 15px;
+    font-size: 1em;
     border: none;
     border-radius: 5px;
+    background-color: #ffd90000; /* Cor do botão */
+    border: 1px #FFD700 solid;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin-left: 20px; /* Espaço entre os links e o botão */
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #FFD700;
+}
+
+.header_navegation:hover {
+
+    color: #FFD700;
+}
+
+.logo_trail {
+    height: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.go_home {
+text-decoration: none;
+color: black;
+
+  }
+
+.search-bar input {
+    padding: 8px 0 0 0;
+    width: 500px;
+    border: none;
+    border-radius: 5px;
+    
 }
 
 .container {
@@ -32,10 +74,16 @@ header {
 }
 
 .trails-list {
-    width: 300px;
+    width: 500px;
     background-color: #f8f8f8;
     overflow-y: auto;
-    padding: 20px;
+    padding: 20px 0 0 5px;
+    transform: transform 0.3s ease;;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.trail:hover {
+    transform: scale(1.05);
 }
 
 .trails-list h2 {
@@ -49,17 +97,28 @@ header {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    justify-content: space-around;
+    width: 350px;
+    height: 150px;
+    color: black;
+}
+
+.trail_style {
+    border: none;
+text-decoration: none;
+
 }
 
 .trail img {
-    width: 80px;
-    height: 80px;
+    width: 200px;
+    height: 150px;
     object-fit: cover;
 }
 
 .trail-info {
     padding: 10px;
     flex: 1;
+    
 }
 
 .trail-info h3 {
@@ -70,20 +129,18 @@ header {
 main#map {
     flex: 1;
     height: 100%;
+    overflow: hidden;
 }
 
+.mapa_google {
+width: 150vh;
+height: 90vh;
+border: 0;
+
+}
+
+
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
+    
 
-    .trails-list {
-        width: 100%;
-        height: 200px;
-        overflow-y: scroll;
-    }
-
-    main#map {
-        height: calc(100% - 200px);
-    }
 }
